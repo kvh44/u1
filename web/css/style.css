@@ -1,0 +1,200 @@
+
+
+/* layout
+   ------ */
+ul {list-style-type:none}
+
+.content { 
+	margin: 10px auto;
+	width: 960px;
+}
+
+.header { 
+	height: 55px;
+	padding: 10px;
+}
+
+.header a{
+	color: #333333;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.small-photo-1 {
+    max-width: 100px;
+}
+
+
+/* left side
+   --------- */
+
+.left {
+     float: left;
+     width: 79%;
+     margin-top: 10px;
+}
+
+
+
+.leftimg {
+    max-width: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+}
+
+.lefttab{
+float: left;
+width: 200px;
+min-height: 500px;
+padding: 10px;
+margin: 0 0 10px 0;
+} 
+
+
+.personal_photo {
+	max-width: 450px !important;
+	max-height: 400px !important;
+	
+}
+
+
+	
+
+/* footer
+   ------ */
+
+.footer { 
+	clear: both; 
+	text-align: center;
+	line-height: 1.8em;
+	color: #808080;
+	background: #FFF;
+	padding: 10px 0 10px 0;
+	border-top: 1px solid #eee;
+}
+
+
+.loginlink {
+	background-image: url('/images/1308417463_icon_padlock.gif') !important; 	   
+    
+}
+
+.newuser {
+    background-image: url('/images/129.png') !important; 	  
+}
+
+
+.newcompanylink {
+	background-image: url('/images/1308417492_kuser.png') !important; 
+}
+
+
+
+.even {
+	  background-color:#E7F3F7;
+	}
+	
+.odd  {
+	  background-color:#F3FAFC;
+	}	
+/* utoconsult */
+.userprofilebar img {
+  float:left;
+  margin-right:5px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+
+
+.ui-widget-content a{
+	color: #3B5998;
+}
+
+.ui-widget-content a:hover{
+}
+
+.hiddenzone {
+	display : none ;
+}
+
+
+.zone_path {
+    color: #808080;
+    display: table-cell;
+    font-size: 10px;
+    /*height: 25px;*/
+    padding-left: 10px;
+    vertical-align: middle;
+    width: 600px;
+}
+
+.zone_path a {
+    color: #808080;
+}
+
+.navbar {
+    background-color:#6CA1DD;
+}
+
+.navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
+    background-color:#3468A2;
+    color: #FFF;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  color: #FFF;
+  background-color: transparent;
+}
+
+
+
+
+
+ul.nav li.dropdown:hover ul.dropdown-menu{
+    display: block;
+}
+     
+/* if you want to hide the arrow */
+a.menu:after, .dropdown-toggle:after {
+    content: none;
+}
+
+
+.bbsplates ul {
+    overflow: hidden;
+}
+.bbsplates ul li {
+    float: left;
+    overflow: hidden;
+    width:120px;
+    height: 100px;
+}
+.bbsplates ul li a {
+    display: block;
+    float: left;
+    height: 82px;
+    line-height: 22px;
+    margin: 0 15px 8px 0;
+    overflow: hidden;
+    text-align: center;
+    width: 60px;
+    color:#333333;
+}
+.bbsplates ul li a img {
+    float: left;
+    height: 60px;
+    width: 60px;
+}
+.bbsplates ul li a b {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 60px;
+    overflow: hidden;
+    width: 60px;
+}
+  

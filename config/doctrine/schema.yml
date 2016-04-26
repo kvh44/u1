@@ -1,0 +1,445 @@
+UtoconsultUser:
+  actAs:
+    Timestampable: null
+    Sluggable: 
+      fields: [username] 
+  columns:
+    username:
+      type: string
+      unique: true
+      notnull: true
+      length: '30'
+    password:
+      type: string
+      notnull: true
+      length: '255'
+    email:
+      type: string
+      notnull: true
+      unique: true
+      length: '255'
+    type:
+      type: enum
+      values: [user, company]
+      notnull: true
+    level:
+      type: integer
+    isAdmin:
+      type: boolean
+      default: 0  
+    active:
+      type: boolean
+      default: 1
+
+
+UtoconsultUserInformation:
+  actAs:
+    Timestampable: null
+  columns:
+    user_id:
+      type: integer
+      notnull: true
+      unique: true
+    realname:
+      type: string
+      notnull: true
+      length: '30'
+    web:
+      type: string
+      length: '1000'
+    special:
+      type: string
+      length: '30'
+    description:
+      type: blob
+    country:
+      type: integer
+      length: '20'
+    province:
+      type: integer
+      length: '20'
+    city:
+      type: integer
+      length: '20'
+    area:
+      type: integer
+      length: '20'  
+  relations:
+    UtoconsultUser:
+      onDelete: CASCADE
+      local: user_id
+      foreign: id
+      foreignType: one
+      
+      
+UtoconsultUserProfilePhoto:
+  actAs:
+    Timestampable: null
+  columns:
+    user_id:
+      type: integer
+      notnull: true
+      unique: true
+    photo:
+      type: string
+      length: '100'
+    photoicon:
+      type: string
+      length: '100'
+  relations:
+    UtoconsultUser:
+      onDelete: CASCADE
+      local: user_id
+      foreign: id
+      foreignType: one
+      
+      
+UtoconsultUserContact:
+  actAs:
+    Timestampable: null
+  columns:
+    user_id:
+      type: integer
+      notnull: true
+      unique: true
+    mobile:
+      type: string
+      length: '30'
+    fix:
+      type: string
+      length: '30'
+    fix2:
+      type: string
+      length: '30'  
+    qq:
+      type: string
+      length: '30'
+    msn:
+      type: string
+      length: '255'
+    skype:
+      type: string
+      length: '255'
+  relations:
+    UtoconsultUser:
+      onDelete: CASCADE
+      local: user_id
+      foreign: id
+      foreignType: one
+
+
+UtoconsultArticleCategory1:
+  actAs:
+    Timestampable: null
+  columns:
+    name:
+      type: string
+      notnull: true
+      unique: true
+      length: '15'
+    photo1:
+      type: string
+      length: 255
+    keywords:
+      type: string
+      length: '255'
+      
+      
+UtoconsultArticleCategory2:
+  actAs:
+    Timestampable: null
+  columns:
+    category1_id:
+      type: integer
+      notnull: true
+    orders:
+      type: integer  
+    name:
+      type: string
+      notnull: true
+      unique: true
+      length: '15'
+    keywords:
+      type: string
+      length: '255'
+  relations:
+    UtoconsultArticleCategory1:
+      local: category1_id
+      foreign: id
+      
+      
+UtoconsultMyArticle:
+  actAs:
+    Timestampable: null
+    Sluggable: 
+      fields: [created_at,title]
+    Searchable:
+      fields: [keywords,title]   
+  columns:
+    category1_id:
+      type: integer
+      notnull: true
+      unique: false
+    category2_id:
+      type: integer
+      notnull: true
+      unique: false
+    keywords:
+      type: string
+      length: '255'
+    description:
+      type: string
+      length: '1000'  
+    title:
+      type: string
+      notnull: true
+      length: '255'
+    content:
+      type: blob
+      notnull: true
+    pdf:
+      type: string
+      length: '255'  
+    keywords_en:
+      type: string
+      length: '255'
+    description_en:
+      type: string
+      length: '1000'    
+    title_en:
+      type: string
+      length: '255'
+    content_en:
+      type: blob
+    pdf_en:
+      type: string
+      length: '255'   
+    user_id:
+      type: integer
+      notnull: true
+    visitnumber:
+      type: integer
+    comment:
+      type: boolean
+      default: 1
+    level:
+      type: enum
+      values: ['1', '2', '3']
+      notnull: true
+    isdeleted:
+      type: boolean
+      default: 0
+    isvalid:
+      type: boolean
+      default: 1
+  indexes:
+     articleindex:
+       fields: [title]         
+  relations:
+    UtoconsultArticleCategory1:
+      onDelete: CASCADE
+      local: category1_id
+      foreign: id
+    UtoconsultArticleCategory2:
+      onDelete: CASCADE
+      local: category2_id
+      foreign: id
+    UtoconsultUser:
+      local: user_id
+      foreign: id
+
+
+   
+      
+province:
+  columns:
+    provinceID: 
+      type: integer
+    province:
+      type: string
+      length: '255'
+
+
+
+
+city:
+  columns:
+    cityID:
+      type: integer
+    city:
+      type: string
+      length: '255' 
+    fatherID:
+      type: integer       
+
+
+
+
+area:
+  columns:
+    areaID:
+      type: integer
+    area:
+      type: string
+      length: '255' 
+    fatherID:
+      type: integer  
+
+      
+UtoconsultAboutus:
+  actAs:
+    Timestampable: null
+  columns:
+     content:
+       type: blob
+       notnull: true   
+       
+       
+
+
+
+  
+      
+UtoconsultPhotoCategory:
+   actAs:
+    Timestampable: null
+   columns:
+    category:
+      type: string
+      notnull: true
+      length: '255' 
+    keywords:
+      type: string
+      length: '255'   
+ 
+UtoconsultPhoto:
+   actAs:
+    Timestampable: null
+    Sluggable: 
+      fields: [created_at,user_id] 
+   columns:
+    user_id:
+      type: integer
+      notnull: true
+    category_id:
+      type: integer 
+    title:
+       type: string
+       length: '255'   
+    content:
+       type: string
+       length: '4000'
+    photoicon:
+      type: string
+      notnull: true
+      length: '100'
+    photosmall:
+      type: string
+      notnull: true
+      length: '100'  
+    photo:
+      type: string
+      notnull: true
+      length: '100' 
+    link:
+      type: string
+      length: '500'   
+    visitnumber:
+      type: integer
+    isdeleted:
+      type: boolean
+      default: 0
+    isvalid:
+      type: boolean
+      default: 1        
+   relations:
+    UtoconsultPhotoCategory:
+      onDelete: CASCADE
+      local: category_id
+      foreign: id    
+    UtoconsultUser:
+      onDelete: CASCADE
+      local: user_id
+      foreign: id               
+      
+      
+UtoconsultFileCategory:
+   actAs:
+    Timestampable: null
+   columns:
+    category:
+      type: string
+      notnull: true
+      length: '255' 
+    keywords:
+      type: string
+      length: '255'  
+    image: 
+      type: string
+      length: '255'  
+      
+      
+UtoconsultFile:
+   actAs:
+    Timestampable: null
+    Sluggable: 
+      fields: [created_at,user_id] 
+   columns:
+    user_id:
+      type: integer
+      notnull: true
+    category_id:
+      type: integer 
+    title:
+       type: string
+       notnull: true
+       length: '255' 
+    keywords:
+      type: string
+      length: '255'     
+    description:
+       type: string
+       length: '4000'
+    file:
+      type: string
+      notnull: true
+      length: '255' 
+    file_original:
+      type: string
+      length: '255'  
+    visitnumber:
+      type: integer
+    image:
+      type: string
+      length: '255'  
+    imageicon:
+      type: string
+      length: '255'   
+    lang:
+      type: string
+      length: '20' 
+    level:
+      type: integer       
+    isuto:
+      type: boolean
+      default: 0  
+    type:
+      type: string
+      length: '20'   
+    isvalid:
+      type: boolean
+      default: 1  
+    isdeleted:
+      type: boolean
+      default: 0   
+   indexes:
+     fileindex:
+       fields: [title]    
+   relations:
+    UtoconsultFileCategory:
+      local: category_id
+      foreign: id    
+    UtoconsultUser:
+      local: user_id
+      foreign: id 
+  

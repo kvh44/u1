@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+    
+    <header>
+        <author>Moxiecode Systems AB</author>
+        <version major="1" minor="2" releasedate="2010-11-22" />
+        <description>This is the Traditional Chinese language pack for the MCImageManager.</description>
+    </header>
+    <language code="zh" title="Traditional Chinese" dir="ltr">
+	<group target="common">
+		<item name="title">Moxiecode 影像管理</item>
+		<item name="filemanager">档案管理程式</item>
+		<item name="createdir">建立资料夹</item>
+		<item name="refresh">重新整理</item>
+		<item name="upload">上传</item>
+		<item name="help">帮助</item>
+		<item name="edit">编辑</item>
+		<item name="deleteit">刪除</item>
+		<item name="view">预览</item>
+		<item name="insert">插入图片</item>
+		<item name="add_favorite">加入我的最爱</item>
+		<item name="directory">已选取的文件夹</item>
+		<item name="removefavorite">移除我的最爱</item>
+		<item name="loading">载入中...</item>
+		<item name="filter">帅选</item>
+		<item name="alert_ok">好</item>
+		<item name="confirm_yes">是</item>
+		<item name="confirm_no">否</item>
+		<item name="prev">前一页</item>
+		<item name="next">下一页</item>
+		<item name="image_data">取得图片资料中，请稍候...</item>
+		<item name="page">页</item>
+		<item name="of">/</item>
+	</group>
+	<group target="button">
+		<item name="create">建立</item>
+		<item name="cancel">放弃</item>
+		<item name="apply">套用</item>
+		<item name="save">保存</item>
+	</group>
+	<group target="error">
+		<item name="demo">此动作已被限制在Demo模式。</item>
+		<item name="no_filesystem">沒有找到档案系統路径: {path}.</item>
+		<item name="no_access">在此檔案/資料夾沒有權限。</item>
+		<item name="no_write_access">在此資料夾没有写入权限</item>
+		<item name="file_not_exists">找不到文件/文件夹。</item>
+		<item name="invalid_filename">无效的文件名。</item>
+		<item name="remove_favorite_failed">从我的最爱清单中移除失败。</item>
+		<item name="template_missing">已选取的范本已找不到。</item>
+		<item name="folder_exists">具有指定文件夹的资料夾已经存在。</item>
+		<item name="createdir_failed">无效建立文件夹。</item>
+		<item name="upload_failed">上传失败，确定您的文件夹写入权限。</item>
+		<item name="file_exists">具有指定名稱的文件夹已经存在。</item>
+		<item name="error_to_large">您上传的文件太大。</item>
+		<item name="delete_failed">无法删除文件。</item>
+		<item name="crop_failed">无法剪切图片。</item>
+		<item name="resize_failed">无法改变大小</item>
+		<item name="rotate_failed">图片旋转失败。</item>
+		<item name="flip_failed">图片翻转失败。</item>
+		<item name="save_failed">保存未成功。</item>
+	</group>
+	<group target="message">
+		<item name="save_success">文件已保存。</item>
+		<item name="keepalive">继续存活的要求。</item>
+		<item name="delete_success">文件已成功刪除。</item>
+		<item name="directory_ok">文件夹已成功刪除。</item>
+		<item name="upload_ok">上传完成。</item>
+		<item name="crop_success">剪裁成功。</item>
+		<item name="resize_success">缩放成功。</item>
+		<item name="rotate_success">旋转成功。</item>
+		<item name="flip_success">翻转成功。</item>
+	</group>
+	<group target="panel">
+		<item name="categories">分类</item>
+		<item name="folders">文件夹</item>
+		<item name="favorites">最爱</item>
+		<item name="history">历史记录</item>
+	</group>
+	<group target="view">
+		<item name="title">标题</item>
+		<item name="mode">模式</item>
+		<item name="thumbnail">缩略图</item>
+		<item name="textlist">文字列</item>
+		<item name="images_per_page">缩略图/頁</item>
+		<item name="confirm_delete">确认移除文件夹？</item>
+		<item name="keyboard_next">快速键: SPACE,N,RIGHTARROW,PAGE DOWN</item>
+		<item name="keyboard_prev">快速键: P,LEFTARROW,PAGE UP</item>
+		<item name="dimensions">尺寸</item>
+		<item name="confirm_remove_favorite">您确定要从我的最爱中移除？</item>
+	</group>
+	<group target="createdir">
+		<item name="title">建立文件夹</item>
+		<item name="description">插入一個您要建立的文件夹描述。</item>
+		<item name="template">范本:</item>
+		<item name="select_template">-- 选取范本 --</item>
+		<item name="directory_name">文件夹名称:</item>
+		<item name="create_in">建立在:</item>
+		<item name="progress">正在建立文件夹，请稍候...</item>
+	</group>
+	<group target="upload">
+		<item name="title">上传</item>
+		<item name="description">使用該表格加载文件。</item>
+		<item name="valid_extensions">有效的延伸功能:</item>
+		<item name="max_upload_size">最大上传大小:</item>
+		<item name="file_to_upload">要上传的文件:</item>
+		<item name="as_file_name">文件名:</item>
+		<item name="path">路径: </item>
+		<item name="button_upload">上传</item>
+		<item name="browse">新增文件</item>
+		<item name="progress">上传中...</item>
+		<item name="upload_warn">文件正被上传，您確定您要放弃此次上传？</item>
+		<item name="choose_files">选择文件</item>
+		<item name="basic_upload">基本上传</item>
+		<item name="file">文件</item>
+		<item name="size">文件大小</item>
+		<item name="status">上传状态</item>
+		<item name="remove">删除</item>
+		<item name="statusrow">您有{files}个文件(总大小{size})正在等待上传</item>
+		<item name="add_more">添加</item>
+		<item name="upload_to_server">上传至服务器</item>
+		<item name="progressinfo">{loaded} of {total} 已上传 速度为{speed}/s.</item>
+		<item name="abort">上传中断</item>
+		<item name="cancelled">上传已经取消</item>
+		<item name="no_valid_files">没有选中合理的文件，请重选</item>
+	</group>
+	<group target="edit_image">
+		<item name="title">Moxiecode 影像编辑器</item>
+		<item name="save">存档</item>
+		<item name="revert">还原</item>
+		<item name="crop">裁切</item>
+		<item name="resize">缩放</item>
+		<item name="please_wait">处理图片中，請稍候...</item>
+		<item name="constrain">固定比例</item>
+		<item name="left">左</item>
+		<item name="top">上</item>
+		<item name="width">宽</item>
+		<item name="height">高</item>
+		<item name="save_as">另存</item>
+		<item name="flip">翻转</item>
+		<item name="rotate">旋转</item>
+		<item name="reload">重新载入</item>
+		<item name="horizontal">水平</item>
+		<item name="vertical">垂直</item>
+		<item name="saving_wait">儲存图片中，請稍候...</item>
+		<item name="confirm_revert">您確定要放弃所做的修改？</item>
+		<item name="loading">图片载入中，請稍候...</item>
+	</group>
+	<group target="tinymce">
+		<item name="insertimage_desc">插入图片</item>
+	</group>
+	<group target="history">
+		<item name="special_folder_title">特殊图片</item>
+    </group>
+    <group target="favorites">
+		<item name="special_folder_title">最爱图片</item>
+    </group>		
+    </language>
+</language-pack>

@@ -1,0 +1,16 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    
+
+  metas:
+
+
+  stylesheets:    [/css/redmond/jquery-ui-1.8.16.custom.css,/js/bs-v3.0.0-rc1-dist/dist/css/bootstrap.css,/css/non-responsive.css,/css/style.css]
+
+  javascripts:    [/js/jquery-1.10.2.min.js,custom.js,/js/bs-v3.0.0-rc1-dist/dist/js/bootstrap.js]
+
+  has_layout:     on
+  layout:         layout

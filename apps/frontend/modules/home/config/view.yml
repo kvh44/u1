@@ -1,0 +1,6 @@
+indexSuccess:
+  stylesheets: [/js/nivo-slider/themes/default/default.css,/js/nivo-slider/demo/style.css,/js/nivo-slider/nivo-slider.css]
+  javascripts: [/js/nivo-slider/jquery.nivo.slider.js,/js/home.js]  
+  
+loginSuccess:
+  stylesheets: [/css/signin.css]

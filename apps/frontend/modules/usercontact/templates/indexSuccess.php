@@ -1,0 +1,1 @@
+<?php include_partial('usercontact',array('usercontact'=>$usercontact,'user'=>isset($user)?$user:null, 'nousercontact'=>isset($nousercontact)?$nousercontact:null))?>

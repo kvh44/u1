@@ -1,0 +1,7 @@
+newSuccess:
+  javascripts: [/js/areafilter.js,/js/areafiltererror.js]  
+  
+  
+editSuccess:
+  javascripts: [/js/areafilter.js,/js/areafiltererror.js]    
+  

@@ -1,0 +1,9 @@
+newSuccess:
+  javascripts: [/js/articlecategoryfilter.js,/js/articlecategoryfiltererror.js,/js/tinymce/jscripts/tiny_mce/tiny_mce.js,/js/tinymce/jscripts/tiny_mce/plugins/imagemanager/js/mcimagemanager.js]  
+  
+  
+editSuccess:
+  javascripts: [/js/articlecategoryfilter.js,/js/articlecategoryfiltererror.js,/js/tinymce/jscripts/tiny_mce/tiny_mce.js,/js/tinymce/jscripts/tiny_mce/plugins/imagemanager/js/mcimagemanager.js]   
+  
+singleSuccess: 
+  javascripts: [/js/article.js]  

@@ -1,0 +1,95 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: home, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*
+
+utoconsult_home:  
+  url: /index.:sf_format
+  param: { module: home, action: index ,sf_format: html}
+
+utoconsult_contactus:  
+  url: /contact.:sf_format
+  param: { module: contactus, action: new ,sf_format: html}
+
+utoconsult_aboutus:  
+  url: /about.:sf_format
+  param: { module: aboutus, action: index ,sf_format: html}
+
+utoconsult_new_user:  
+  url: /newuser.:sf_format
+  param: { module: user, action: new ,sf_format: html}
+
+utoconsult_login:  
+  url: /login.:sf_format
+  param: { module: home, action: login ,sf_format: html}
+
+
+
+utoconsult_userinfo:
+  url: /:module/:id.:sf_format
+  param: { module: userinfo, action: index ,sf_format: html}
+
+
+utoconsult_userinfo2:
+  url: /:module/:username.:sf_format
+  param: { module: userinfo, action: index ,sf_format: html}  
+
+
+utoconsult_userinfo3:
+  url: /:module/:id
+  param: { module: userinfo, action: index ,sf_format: html}   
+  
+utoconsult_userinfo4:
+  url: /:module/:username
+  param: { module: userinfo, action: index ,sf_format: html}    
+  
+
+utoconsult_usercontact:
+  url: /:module/:id
+  param: { module: usercontact, action: index ,sf_format: html}  
+
+utoconsult_usercontact2:
+  url: /:module/:username.:sf_format
+  param: { module: usercontact, action: index ,sf_format: html}  
+
+
+utoconsult_category1:
+  url:   /articles/index2/category/:category
+  param: { module: articles, action: index2 ,sf_format: html}  
+
+
+utoconsult_single_article:
+  url: /:module/:id.:sf_format
+  param: { module: articles, action: single ,sf_format: html}  
+  
+  
+utoconsult_single_article2:
+  url: /:module/:slug
+  param: { module: articles, action: single ,sf_format: html}    
+  
+
+  
+utoconsult_file_index:  
+  url: /file.:sf_format
+  param: { module: file, action: index ,sf_format: html}
+
+utoconsule_single_file:
+  url: /:module/:id.:sf_format
+  param: { module: file, action: single2 ,sf_format: html}    
+  
+  
+utoconsult_search:
+  url: /search/:query.:sf_format
+  param: { module: search, action: index ,sf_format: html}  
