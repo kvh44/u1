@@ -12,7 +12,7 @@
     </header>
     <language code="zh" title="Traditional Chinese" dir="ltr">
 	<group target="common">
-		<item name="title">Moxiecode 影像管理</item>
+		<item name="title">优拓影像管理</item>
 		<item name="filemanager">档案管理程式</item>
 		<item name="createdir">建立资料夹</item>
 		<item name="refresh">重新整理</item>

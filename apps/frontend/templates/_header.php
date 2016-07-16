@@ -3,7 +3,7 @@
             <div class="top_info">
 				<div class="top_info_right">
                                 <ul class="nav nav-pills pull-right">    
-                                    <li><a href="<?php echo url_for('utoconsult_aboutus') ?>">关于优拓</a></li>
+                                    <li><a href="/about.html">关于优拓</a></li>
                                     <li><a href="/index.html"><img src="/images/cn.gif" style="vertical-align:middle;">中文</a></li>
 				    <li><a href="#"><img src="/images/en.gif" style="vertical-align:middle;">English</a></li>
 				<?php 

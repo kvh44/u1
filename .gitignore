@@ -1,6 +1,10 @@
 /cache/*
+/cache/
 /logs/*
+/logs/
+/nbproject/*
 /nbproject/
 /web/uploads/
+/web/images/
 /symfony
 /config/databases.yml
