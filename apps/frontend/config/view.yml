@@ -8,9 +8,9 @@ default:
   metas:
 
 
-  stylesheets:    [/css/redmond/jquery-ui-1.8.16.custom.css,/js/bs-v3.0.0-rc1-dist/dist/css/bootstrap.css,/css/non-responsive.css,/css/style.css]
+  stylesheets:    [/css/redmond/jquery-ui-1.8.16.custom.css,/js/bootstrap/css/bootstrap.css,/css/non-responsive.css,/css/style.css]
 
-  javascripts:    [/js/jquery-1.10.2.min.js,custom.js,/js/bs-v3.0.0-rc1-dist/dist/js/bootstrap.js]
+  javascripts:    [/js/jquery-1.10.2.min.js,custom.js,/js/bootstrap/js/bootstrap.js]
 
   has_layout:     on
   layout:         layout
