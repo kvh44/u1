@@ -1020,3 +1020,6 @@
 [Thu Jul 14 21:27:03.240763 2016] [:error] [pid 20706] [client 127.0.0.1:62408] Empty module and/or action after parsing the URL "/favicon.ico" (/)., referer: http://127.0.0.1:8084/articles/listadmin/page/1
 [Thu Jul 14 21:27:05.420825 2016] [:error] [pid 20706] [client 127.0.0.1:62408] Action "js/tinymce" does not exist., referer: http://127.0.0.1:8084/articles/new
 [Thu Jul 14 21:27:05.586161 2016] [:error] [pid 20711] [client 127.0.0.1:62415] Empty module and/or action after parsing the URL "/favicon.ico" (/)., referer: http://127.0.0.1:8084/articles/new
+[Sat Jul 16 16:30:04.928849 2016] [:error] [pid 913] [client 127.0.0.1:51006] Empty module and/or action after parsing the URL "/favicon.ico" (/)., referer: http://127.0.0.1:8084/
+[Sat Jul 16 16:30:05.311243 2016] [:error] [pid 913] [client 127.0.0.1:51006] Empty module and/or action after parsing the URL "/favicon.ico" (/)., referer: http://127.0.0.1:8084/login.html
+[Sat Jul 16 16:30:07.133944 2016] [:error] [pid 913] [client 127.0.0.1:51006] Empty module and/or action after parsing the URL "/favicon.ico" (/)., referer: http://127.0.0.1:8084/home
