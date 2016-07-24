@@ -2,6 +2,7 @@
 /cache/
 /logs/*
 /logs/
+/logs/*.log
 /nbproject/
 /web/uploads/
 /symfony
